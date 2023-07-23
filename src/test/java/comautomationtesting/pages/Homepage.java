@@ -179,6 +179,68 @@ public class Homepage {
     @FindBy(className = "showcoupon")
     public WebElement addACouponLink;
 
+    @FindBy (xpath = "//img[@loading='lazy']")
+    public List<WebElement> threeArrivals;
+
+    @FindBy (xpath = "//a[.='Home']")
+    public WebElement homePageButton;
+
+    @FindBy(xpath = "//div[@style='width: 1160px; height: 652px;']")
+    public WebElement threeslide;
+
+    @FindBy(xpath = "//img[@title='Selenium Ruby']")
+    public WebElement firstArrivals;
+
+    @FindBy(xpath = "//img[@title='Mastering JavaScript']")
+    public WebElement thirdArrivals;
+
+    @FindBy(xpath = "//a[.='Description']")
+    public WebElement descriptionTab;
+
+    @FindBy(xpath = "//a[.='Reviews (0)']")
+    public WebElement reviewsTab;
+
+    @FindBy(xpath = "//h2[.='Reviews']")
+    public WebElement reviewsText;
+
+    @FindBy(xpath = "//button[.='Add to basket']")
+    public  WebElement addToBasketBtn;
+    @FindBy(xpath = "//span[.='1 item']")
+    public WebElement itemText;
+    @FindBy(xpath = "//span[@class='amount']")
+    public WebElement priceText;
+
+    @FindBy(xpath = "(//a[@href='https://practice.automationtesting.in/basket/'])[1]")
+    public WebElement checkoutPageButton;
+
+    @FindBy(id = "coupon_code")
+    public WebElement couponCodeInputBox;
+
+    @FindBy(xpath = "//table[@class='shop_table shop_table_responsive']/tbody/tr[2]")
+    public WebElement couponCode;
+
+    @FindBy(xpath = "//ul[@class='woocommerce-error']/li")
+    public WebElement errorMessage;
+
+    @FindBy(xpath = "//a[@title='Remove this item']")
+    public WebElement removeThisButton;
+
+    @FindBy(xpath = "//input[@inputmode='numeric']")
+    public WebElement quantityInputBox;
+
+    @FindBy(xpath = "//div[.='Basket updated.']")
+    public WebElement basketUpdatedText;
+
+    @FindBy(xpath = "//input[@id='s2id_autogen2_search']")
+    public WebElement searchProvinceBox;
+
+    @FindBy(id="billing_state")
+    public WebElement dropdown;
+
+    @FindBy(xpath = "//li[@role='presentation']")
+    public WebElement provinceOptions;
+
+
 
 
 }
