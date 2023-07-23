@@ -31,7 +31,6 @@ public final class ThreeSlidersOnly {
         //6) The Home page must contain only three sliders
         int expectedSlidersNumber = 3;
         int actualSliderNumber = homepage.threeSlidersOnly.size();
-
         Assert.assertEquals(actualSliderNumber, expectedSlidersNumber);
 
         Driver.closeDriver();
