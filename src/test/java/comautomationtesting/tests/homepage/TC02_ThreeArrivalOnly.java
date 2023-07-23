@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 public class TC02_ThreeArrivalOnly {
     @Test
     public void ThreeArrivalOnly() {
+
         Homepage homepage = new Homepage();
 
         //1) Open the browser
@@ -22,7 +23,6 @@ public class TC02_ThreeArrivalOnly {
         ReusableMethods.waitAndClick(homepage.shopButton, 2);
 
         //4) Now click on Home menu button
-
         homepage.homeButton.click();
         Driver.getDriver().navigate().refresh();
         ReusableMethods.waitAndClick(homepage.homeButton, 3);
