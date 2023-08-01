@@ -1,5 +1,5 @@
 package comautomationtesting.tests.homepage;
-
+import com.github.javafaker.Faker;
 import comautomationtesting.pages.Homepage;
 import comautomationtesting.utilities.ConfigurationReader;
 import comautomationtesting.utilities.Driver;
@@ -10,7 +10,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC17_CheckOutPaymentGateway {
-
 
     @Test
     public void CheckOutPaymentGateway() {
@@ -93,7 +92,6 @@ public class TC17_CheckOutPaymentGateway {
         Assert.assertTrue(homepage.paymentGateway.isDisplayed());
 
         //17)Now user can fill his details in billing details form and can opt any payment in the payment gateway like Direct bank transfer,cheque,cash or paypal.
-
         homepage.inputFirstName.sendKeys(faker.name().firstName());
         homepage.inputLastName.sendKeys(faker.name().lastName());
         homepage.inputEmailAddress.sendKeys(faker.internet().emailAddress());
@@ -120,7 +118,6 @@ public class TC17_CheckOutPaymentGateway {
 
 
         //18)User has the feasibility to add coupon in the payment gateway page and also he can find billing,order and additional details.
-
         jsexecutor.executeScript("window.scrollTo(0,-document.body.scrollHeight)");
         Assert.assertTrue(homepage.addACouponLink.isDisplayed());
     }

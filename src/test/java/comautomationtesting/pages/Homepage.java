@@ -240,7 +240,7 @@ public class Homepage {
     @FindBy(xpath = "//li[@role='presentation']")
     public WebElement provinceOptions;
 
-
-
+    @FindBy(xpath = "(//span[@class='select2-chosen'])[2]")
+    public WebElement inputProvince;
 
 }
