@@ -76,7 +76,6 @@ public class TC16_CheckOutFunctionality {
         //15) Total
         System.out.println("Total Price= "+ homepage.finalTotalPrice.getText());
 
-
         //15) Now click on Proceed to Check out button which navigates to payment gateway page.
         jsexecutor.executeScript("window.scrollBy(0,250)");
         homepage.proceedToCheckout.click();
