@@ -36,5 +36,7 @@ public class TC23_LoginWithEmptyUsernameAndPW {
         Assert.assertTrue(loginPage.errorMessage.getText().contains("Username is required."));
         Assert.assertTrue(loginPage.loginForm.isDisplayed());
 
+        Driver.closeDriver();
+
     }
 }
