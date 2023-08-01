@@ -243,4 +243,13 @@ public class Homepage {
     @FindBy(xpath = "(//span[@class='select2-chosen'])[2]")
     public WebElement inputProvince;
 
+    @FindBy(css = "p[class='woocommerce-thankyou-order-received']")
+    public WebElement orderThankyouMessage;
+
+    @FindBy(css = "table[class='shop_table order_details']")
+    public WebElement orderDetailTable;
+
+    @FindBy(css = "h2[class='wc-bacs-bank-details-heading']")
+    public WebElement bankDetail;
+
 }
