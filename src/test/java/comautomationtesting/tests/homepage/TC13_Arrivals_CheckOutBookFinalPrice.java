@@ -48,7 +48,6 @@ public class TC13_Arrivals_CheckOutBookFinalPrice {
 
         //8) Test whether it is navigating to next page where the user can add that book into his basket.
         //9) Image should be clickable and should navigate to next page where user can add that book to his basket
-
         Assert.assertTrue(Driver.getDriver().getTitle().toLowerCase().contains(imageText));
         assert homepage.addToBasketButton.isDisplayed();
 
