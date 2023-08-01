@@ -125,6 +125,5 @@ public class TC18_CheckOutPaymentGatewayPlaceOrder {
         assert homepage.orderDetailTable.isDisplayed();
         assert homepage.bankDetail.isDisplayed();
 
-
     }
 }
