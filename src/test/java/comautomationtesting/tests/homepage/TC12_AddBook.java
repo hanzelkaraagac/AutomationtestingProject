@@ -32,7 +32,6 @@ public class TC12_AddBook {
         //6) The Home page must contains only three Arrivals
 
         //7) Now click the image in the Arrivals
-
         homepage.thirdArrivals.click();
 
         //8) Test whether it is navigating to next page where the user can add that book into his basket.
