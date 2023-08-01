@@ -1,6 +1,4 @@
 package comautomationtesting.tests.my_account_login;
-
-import comautomationtesting.pages.Homepage;
 import comautomationtesting.pages.LoginPage;
 import comautomationtesting.utilities.ConfigurationReader;
 import comautomationtesting.utilities.Driver;
