@@ -34,5 +34,7 @@ public class TC19_LoginPositive {
 
         //   7) User must successfully log in to the web page
         Assert.assertTrue(loginPage.dashboardBtn.isDisplayed());
+
+        Driver.closeDriver();
     }
 }
