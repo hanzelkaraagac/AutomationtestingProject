@@ -36,5 +36,6 @@ public class TC21_LoginNegative {
         Assert.assertTrue(loginPage.loginErrorMessage.getText().contains("Password is required."));
 
         Driver.closeDriver();
+
     }
 }
