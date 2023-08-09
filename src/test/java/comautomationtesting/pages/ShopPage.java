@@ -31,32 +31,61 @@ public class ShopPage {
     public List<WebElement> prices;
     @FindBy(css = "del>span.woocommerce-Price-amount.amount")
     public List<WebElement> onSaleItemOldPrice;
+
     @FindBy(css = "ul.product-categories>li>a")
     public List<WebElement> productCategoriesList;
+
     @FindBy(name = "orderby")
     public WebElement defaultSortingDropDown;
+
     //onSale items are more than one but this locator will take the first one anyway it could be in the list too.
     @FindBy(xpath = "//span[text()=\"Sale!\"]")
     public WebElement onSaleItem;
+
     @FindBy(css = "del>span")
     public WebElement oldPriceOnSaleItem;
+
     @FindBy(css = "ins>span")
     public WebElement actualPriceOnSaleItem;
+
     //There are 8 add to basket link but this locator will represent the first one
     @FindBy(xpath = "//a[text()=\"Add to basket\"]")
     public WebElement addToBasketLink;
+
     @FindBy(css = "span.amount")
     public WebElement amountOnShoppingCart;
+
     @FindBy(css = "span.cartcontents")
     public WebElement cartContentOnShoppingCart;
+
     @FindBy(xpath = "//a[@title=\"View Basket\"]")
     public WebElement viewBasketLink;
+
     @FindBy(xpath = "//a[@title=\"View your shopping cart\"]")
     public WebElement viewShoppingCartLink;
+
     @FindBy(xpath = "//a[text()=\"Android Quick Start Guide\"]")
     public WebElement itemAddedToBasket;
+
     @FindBy(css = "td.product-subtotal>span")
     public WebElement priceOfProductInBasket;
+
+    @FindBy(linkText = "Shop")
+    public WebElement shopButton;
+
+    @FindBy(xpath = "//span[@class='ui-slider-handle ui-corner-all ui-state-default'][2]")
+    public WebElement filterRightButton;
+
+    @FindBy(xpath = "//button[.='Filter']")
+    public WebElement filterButton;
+
+    @FindBy(xpath = "//a[.='Android']")
+    public WebElement productAndroid;
+
+    @FindBy(xpath = "//nav[@class='woocommerce-breadcrumb']")
+    public WebElement homeChosenProduct;
+    @FindBy(css = "select[name='orderby']")
+    public WebElement defaultSortingDropdown;
 
 
     public void adjustPriceBySlider(int startPrice, int endPrice) {
