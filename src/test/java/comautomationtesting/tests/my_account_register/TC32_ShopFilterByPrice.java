@@ -33,5 +33,7 @@ public class TC32_ShopFilterByPrice {
         //User can view books only between 150 and 450 rps price
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("min_price=150&max_price=450"));
 
+        Driver.closeDriver();
+
     }
 }
