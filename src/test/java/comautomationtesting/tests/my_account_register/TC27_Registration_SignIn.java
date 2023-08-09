@@ -19,7 +19,6 @@ public class TC27_Registration_SignIn {
         Driver.getDriver().get(ConfigurationReader.getProperty("au_url"));
 
         //3) Click on My Account Menu
-
         registrationPage.myAccountButton.click();
         Driver.getDriver().navigate().refresh();
         registrationPage.myAccountButton.click();
@@ -28,7 +27,6 @@ public class TC27_Registration_SignIn {
         String emailRegistered=faker.internet().emailAddress();
         System.out.println("emailRegistered = " + emailRegistered);
         registrationPage.inputEmailRegister.sendKeys(emailRegistered);
-
 
         //5) Enter your own password in password textbox
         String password= faker.internet().password(8,10,true,true,true);
@@ -40,5 +38,7 @@ public class TC27_Registration_SignIn {
 
         //7) User will be registered successfully and will be navigated to the Home page
         assert registrationPage.dashboard.isDisplayed();
+
+        Driver.closeDriver();
     }
 }
