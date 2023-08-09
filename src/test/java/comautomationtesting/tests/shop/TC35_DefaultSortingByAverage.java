@@ -29,8 +29,6 @@ public class TC35_DefaultSortingByAverage {
 
         //5) Now user can view the popular products only
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("orderby=rating"));
-
         Driver.closeDriver();
-
     }
 }
