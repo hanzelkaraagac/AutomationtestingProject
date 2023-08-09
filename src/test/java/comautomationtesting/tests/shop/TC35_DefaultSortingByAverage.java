@@ -1,4 +1,4 @@
-package comautomationtesting.tests.my_account_register;
+package comautomationtesting.tests.shop;
 
 import comautomationtesting.pages.ShopPage;
 import comautomationtesting.utilities.ConfigurationReader;
@@ -7,10 +7,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC34_DefaultSortingByPopularity {
+public class TC35_DefaultSortingByAverage {
 
     @Test
-    public void defaultSortingByPopularity() {
+    public void defaultSortingByAverage() {
 
         ShopPage shopPage = new ShopPage();
 
@@ -23,12 +23,12 @@ public class TC34_DefaultSortingByPopularity {
         Driver.getDriver().navigate().refresh();
         shopPage.shopButton.click();
 
-        //4) Click on Sort by Popularity item in Default sorting dropdown
+        //4) Click on Sort by Average ratings in Default sorting dropdown
         Select defaultSorting = new Select(shopPage.defaultSortingDropdown);
-        defaultSorting.selectByVisibleText("Sort by popularity");
+        defaultSorting.selectByVisibleText("Sort by average rating");
 
         //5) Now user can view the popular products only
-        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("orderby=popularity"));
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("orderby=rating"));
 
         Driver.closeDriver();
 

@@ -1,4 +1,4 @@
-package comautomationtesting.tests.my_account_register;
+package comautomationtesting.tests.shop;
 
 import comautomationtesting.pages.Homepage;
 import comautomationtesting.pages.ShopPage;
