@@ -29,6 +29,5 @@ public class TC33_ShopProductCategories {
         //Now user can view only that particular product
         shopPage.verifyParticularProductCategory("Android");
         Driver.closeDriver();
-
     }
 }
