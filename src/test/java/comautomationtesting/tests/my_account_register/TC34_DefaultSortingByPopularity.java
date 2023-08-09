@@ -29,5 +29,8 @@ public class TC34_DefaultSortingByPopularity {
 
         //5) Now user can view the popular products only
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("orderby=popularity"));
+
+        Driver.closeDriver();
+
     }
 }
