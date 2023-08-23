@@ -40,5 +40,6 @@ public class TC_44_MyAccounts {
         myAccountPage.myAccountBtn.click();
 
         //9) User must view Dashboard of the site
+        Driver.closeDriver();
     }
 }
