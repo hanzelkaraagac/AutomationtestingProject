@@ -41,5 +41,7 @@ public class TC_51_MyAccounts {
 
         //10) On clicking logout,User successfully comes out from the site
         assert myAccountPage.myAccountPage.isDisplayed();
+
+        Driver.closeDriver();
     }
 }
