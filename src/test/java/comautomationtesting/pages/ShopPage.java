@@ -87,6 +87,18 @@ public class ShopPage {
     @FindBy(css = "select[name='orderby']")
     public WebElement defaultSortingDropdown;
 
+    @FindBy(xpath = "//a[.='Shop']")
+    public WebElement shopBtn;
+
+    @FindBy(xpath = "//span[.='Sale!']")
+    public WebElement saleBtn;
+
+    @FindBy(xpath = "//p[@class='price']/del/span")
+    public WebElement oldPrice;
+
+    @FindBy(xpath = "//p[@class='price']//ins/span")
+    public WebElement actualPrice;
+
 
     public void adjustPriceBySlider(int startPrice, int endPrice) {
         Actions move = new Actions(Driver.getDriver());
