@@ -138,4 +138,7 @@ public class MyAccountPage {
 
     @FindBy(xpath = "//div[@class='woocommerce-MyAccount-content']")
     public WebElement myAccountContent;
+
+    @FindBy(xpath = "//h2[.='Login']")
+    public WebElement myAccountPage;
 }
